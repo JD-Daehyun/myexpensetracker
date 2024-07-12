@@ -1,4 +1,4 @@
-import { Flex, Heading } from "@chakra-ui/react";
+import { Button, Flex, Heading } from "@chakra-ui/react";
 
 export default function Main() {
   return (
@@ -10,9 +10,17 @@ export default function Main() {
         >
           Expense Tracker
         </Heading>
-        <Flex>
-            
+        <Flex alignItems={'center'}>
+            <Button
+            bg={'blue.400'} color={'black'} ml={'4'} >
+                Add New Transaction
+            </Button>
+
         </Flex>
+      </Flex>
+
+      <Flex>
+        
       </Flex>
     </Flex>
   );
