@@ -4,7 +4,7 @@ export default function Summary() {
   return (
     <Box
       p={"6"}
-      border={"2px solid"}
+      border={"3px solid"}
       borderColor={"gray.100"}
       overflow={"hidden"}
       borderRadius={"10"}
