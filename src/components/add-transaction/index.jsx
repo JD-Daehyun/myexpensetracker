@@ -1,5 +1,5 @@
 import {
-    Button,
+  Button,
   FormControl,
   FormLabel,
   Input,
@@ -14,9 +14,9 @@ import {
   RadioGroup,
 } from "@chakra-ui/react";
 
-export default function TransactionForm() {
+export default function TransactionForm({ onClose, isOpen }) {
   return (
-    <Modal>
+    <Modal isOpen={isOpen} onClose={onClose}>
       <form>
         <ModalOverlay />
         <ModalContent>
@@ -39,13 +39,19 @@ export default function TransactionForm() {
                 type="number"
               />
             </FormControl>
-            <RadioGroup mt={'5'} >
-                <Radio name="type" colorScheme="blue" value="income">Income</Radio>
-                <Radio name="type" colorScheme="red" value="expense">Expense</Radio>
+            <RadioGroup mt={"5"}>
+              <Radio name="type" colorScheme="blue" value="income" mr={'4'}>
+                Income
+              </Radio>
+              <Radio name="type" colorScheme="red" value="expense">
+                Expense
+              </Radio>
             </RadioGroup>
           </ModalBody>
           <ModalFooter>
-            <Button mr={'4'}>Cancel</Button>
+            <Button mr={"4"} onClick={onClose}>
+              Cancel
+            </Button>
             <Button>Add</Button>
           </ModalFooter>
         </ModalContent>
