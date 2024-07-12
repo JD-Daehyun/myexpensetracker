@@ -44,7 +44,7 @@ const options = {
     },
   };
 
-export default function TransactionChartSummary({expense = 100, income = 100}){
+export default function TransactionChartSummary({expense = 0, income = 0}){
 
 
     return <Chart 

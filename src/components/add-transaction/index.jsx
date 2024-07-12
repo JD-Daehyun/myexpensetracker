@@ -75,18 +75,17 @@ export default function TransactionForm({ onClose, isOpen }) {
                 colorScheme="red"
                 value="expense"
                 onChange={handleFormChange}
-
               >
                 Expense
               </Radio>
             </RadioGroup>
           </ModalBody>
           <ModalFooter>
-            <Button mr={"4"} onClick={onClose}>
-              Cancel
-            </Button>
             <Button onClick={onClose} type="submit">
               Add
+            </Button>
+            <Button ml={"4"} onClick={onClose}>
+              Cancel
             </Button>
           </ModalFooter>
         </ModalContent>
